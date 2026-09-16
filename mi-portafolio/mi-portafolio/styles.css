@@ -1,0 +1,64 @@
+/* TODO: puedes ajustar estos colores, pero mantén variables en :root */
+:root {
+  --color-primario: #0f3460;
+  --color-acento: #e94560;
+  --color-fondo: #faf9f6;
+  --color-texto: #1a1a2e;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--color-primario);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  flex-direction: column; /* mobile-first: apilado */
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:focus-visible {
+  outline: 2px solid var(--color-acento);
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile: 1 columna */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* TODO: agrega aquí tus estilos para .card-proyecto, .lista-habilidades, form, footer, etc. */
+
+/* Tablet */
+@media (min-width: 600px) {
+  nav { flex-direction: row; justify-content: center; gap: 1.5rem; }
+  .grid-proyectos { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .grid-proyectos { grid-template-columns: repeat(3, 1fr); }
+}

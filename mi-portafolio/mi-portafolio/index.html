@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio — [Tu Nombre]</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- TODO: reemplaza [Nombre] y [Tu carrera / rol] -->
+    <section id="inicio" class="hero">
+      <h1>Hola, soy [Nombre]</h1>
+      <p>[Tu carrera / rol]</p>
+      <button id="btn-cta">Ver proyectos</button>
+    </section>
+
+    <!-- TODO: escribe 2 párrafos reales sobre ti y agrega tu foto en assets/ -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <img src="assets/foto-perfil.jpg" alt="Foto de perfil de [Nombre]">
+      <p>[Párrafo 1: quién eres, qué estudias]</p>
+      <p>[Párrafo 2: intereses, qué buscas]</p>
+    </section>
+
+    <!-- Esta sección se llena automáticamente desde script.js (array "proyectos") -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="grid-proyectos"><!-- se llena con JS --></div>
+    </section>
+
+    <!-- TODO: agrega tus habilidades reales, como lista o badges -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul class="lista-habilidades">
+        <li>[Habilidad 1]</li>
+        <li>[Habilidad 2]</li>
+        <li>[Habilidad 3]</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="form-contacto" novalidate>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <span class="error" id="error-nombre"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="error-email"></span>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <span class="error" id="error-mensaje"></span>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 [Tu Nombre]. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
