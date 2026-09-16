@@ -15,6 +15,6 @@ Navbar sticky, Hero, Sobre mí, Proyectos (render dinámico), Habilidades, Conta
 Abre `index.html` en el navegador o usa Live Server en VS Code.
 
 ## Sitio publicado
-https://Arkevael.github.io/mi-portafolio/mi-portafolio
+https://Arkevael.github.io/Portada/
 
 ## Capturas
